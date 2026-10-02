@@ -5,7 +5,7 @@ import json
 import re
 from dotenv import load_dotenv
 
-load_dotenv()
+load_dotenv(override=True)
 
 intents = discord.Intents.default()
 intents.message_content = True  # Privileged intent must be enabled in Developer Portal
