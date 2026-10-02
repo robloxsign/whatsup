@@ -11,8 +11,8 @@ intents = discord.Intents.default()
 intents.message_content = True  # Privileged intent must be enabled in Developer Portal
 
 client = discord.Client(intents=intents)
-weather_api_key = os.environ["f9ac73101dc7d2b6528989d378ab3b1c"]
-discord_api_key = os.environ["3c30540aba5b6579f84a9ec82498baf1f5d570cb734466c893d157364534e1e7"]
+weather_api_key = os.environ["WEATHER_API_KEY"]
+discord_api_key = os.environ["DISCORD_TOKEN"]
 
 @client.event
 async def on_ready():
